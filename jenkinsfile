@@ -14,8 +14,8 @@ pipeline {
             }
         }
         stage('Lancer le test') {
-                'npx playwright test'
-         
+            steps {
+                sh 'npx playwright test'
             }
         } 
 }
